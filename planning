@@ -1,0 +1,30 @@
+To-do (labweek)
+
+1. Define specific user stories/ steps for what want to build (high-level features below)
+  >> Facilitate a bitcoin transaction (e.g. I can click on a user and donate to them)
+  >> Have a database that stores Donaters who sign-up to the site and Receivers (who are displayed on site)
+  >> Have a professional looking front page with a grid structure of users that can click on and be taken to a transaction page
+  >> User receives a text when transfer complete
+  >> User receives an email when they sign-up
+  >> Integrate a google chart or something which shows transaction being processed by the website
+2. Set-up a wallet, load some bitcoins, get a working understanding of how to make transactions between 2 parties
+3. Read about Ethereum, web3 architecture, blockchain etc to get a detailed understanding
+  >> Complete ethereum tutorial
+
+
+Other
+1. Daily CodeWars (keep javascript and ruby ticking over)
+2. Daily CSS course (use front-end to focus)
+  >> How get something centred correctly (e.g. margin auto)?
+  >> How get something vertically aligned within bootstrap?
+  >> How use flexbox?
+  >> What is best way to get things sitting side-by-side
+  >> Get a working mobile responsive site
+3. Review challenge comments (chitter) and have 1-to-1
+
+
+Bitcoin qu's/observations
+>> set-up and deposit process is very arduous. Still looks like might take a whole week, multiple wallets, sending off to random international bank accounts (e.g. Coinbase), not clear whether you need
+>> Do you have a static address or does it change with every transaction? Need to play with this
+>> How do you link up addresses to multiple wallets?
+>> Where do testnet coins sit? >> separate testable blockchain, need a separate wallet
