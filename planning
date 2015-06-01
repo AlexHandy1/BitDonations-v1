@@ -58,6 +58,8 @@ Plan
 Other questions
 >> What is best way to store images in database? (e.g. entrepreneurs) Separate class e.g. Image?
 >> What about entrepreneurs who don't have donors and vice versa? (I just want it to populate when valid)
+>> Why isn't my responsive CSS getting picked up from bootstrap
+>> Best way to pass in Restful parameters to URL e.g. /ent/:id and get passed in id from each database entry?
 
 
 

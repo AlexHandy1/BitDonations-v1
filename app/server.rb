@@ -14,9 +14,12 @@ require_relative 'database_setup'
 #REQUIRE CONTROLLERS/ HELPERS
 
 require_relative 'controllers/application'
+require_relative 'controllers/ent'
+require_relative 'controllers/donate'
 
 
 #SET-UP SINATRA
 enable :sessions
 set :session_secret, 'super_secret'
+set :public_folder, 'public'
 use Rack::Flash

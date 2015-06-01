@@ -8,6 +8,4 @@ class Entrepreneur
 
   property :id, Serial
   property :project, Text
-
-
 end
