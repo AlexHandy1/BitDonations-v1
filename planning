@@ -11,7 +11,6 @@ To-do (labweek)
 3. Read about Ethereum, web3 architecture, blockchain etc to get a detailed understanding
   >> Complete ethereum tutorial
 
-
 Other
 1. Daily CodeWars (keep javascript and ruby ticking over)
 2. Daily CSS course (use front-end to focus)
@@ -28,3 +27,38 @@ Bitcoin qu's/observations
 >> Do you have a static address or does it change with every transaction? Need to play with this
 >> How do you link up addresses to multiple wallets?
 >> Where do testnet coins sit? >> separate testable blockchain, need a separate wallet
+>> How inputs and outputs work is still not 100% clear and how relates to balances? (e.g. idea that everything is a transaction and can only spend outputs of received transactions)
+>> When do you need signatures?
+>> Where can you find the stable 'public key'? Doesn't it constantly change? (Khan video discrepancy?)
+
+Chain.inc (seems like I don't need a specific wallet + ruby client)
+  >> How do you link method specifically to testnet?
+  >> How do you get private keys vs just the address?
+  >> is the address basically the public key?
+  >> Where can you find the stable 'public key'? Doesn't it constantly change?
+
+Blockchain.info
+  >> Seems like works purely off an API params request but may need specific wallet and account
+  >> Looks like you can automatically create wallets and addresses which would be very useful
+
+Blockcypher
+  >> Seems to have direct access to the Testnet
+
+Stripe
+  >> provides more tailored checkout access - could be a good wrapper particularly for conversions
+
+
+Plan
+- Understand what data/ structures need to facilitate a Bitcoin transaction as a merchant (e.g. sign-up flow)
+- Understand what APIs/ best way to link into this
+- Build basic project structure for Sinatra
+- Set-up Models for database
+- Basic home-page grid (CSS course)
+
+
+
+
+
+
+
+
