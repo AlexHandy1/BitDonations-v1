@@ -55,6 +55,9 @@ Plan
 - Set-up Models for database
 - Basic home-page grid (CSS course)
 
+Other questions
+>> What is best way to store images in database? (e.g. entrepreneurs) Separate class e.g. Image?
+>> What about entrepreneurs who don't have donors and vice versa? (I just want it to populate when valid)
 
 
 

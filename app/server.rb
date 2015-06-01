@@ -8,7 +8,7 @@ require 'rack-flash'
 
 require_relative 'models/donor'
 require_relative 'models/entrepreneur'
-#will add transactions
+require_relative 'models/transaction'
 require_relative 'database_setup'
 
 #REQUIRE CONTROLLERS/ HELPERS

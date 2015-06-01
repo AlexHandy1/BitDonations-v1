@@ -1,6 +1,6 @@
 env = ENV['RACK_ENV'] ||'development'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/chitter_#{env}")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/bitdonations_#{env}")
 
 DataMapper.finalize
 

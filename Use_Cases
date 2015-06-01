@@ -1,10 +1,14 @@
 1. As a donor,
    So that I can decide who I want to give Bitcoin too
-   I want to be able to look at some example entrepreneurs
+   I want to be able to look at a 2*2 grid of example entrepreneurs with links on home-page
+
+1b.? As an admin,
+    So that I can test entrepreneur functionality
+    I want a quick way to add entrepreneurs to my database
 
 2a. As a donor,
-   So that I can donate Bitcoin
-   I want to be able to sign-up to the website
+    So that I can donate Bitcoin
+    I want to be able to sign-up to the website
 
 2b. As a donor,
     So that I can confirm my account
@@ -30,12 +34,16 @@
    So that I know my transaction has been confirmed,
    I want to receive a text message from the website
 
+8. As an administrator,
+   So that I can review transactions, their donors and corresponding entrepreneurs
+   I want a database of entries for transactions on the site (with timestamps)
+
 Extra...
 
-8. As an donor and an entrepreneur,
+9. As an donor and an entrepreneur,
    So that I can assess activity on the site
    I want to be able to see a graphical representation of transactions on the site
-9. As an entrepreneur,
+10. As an entrepreneur,
    So that I can encourage donations,
    I want to be able to edit my own profile
 
