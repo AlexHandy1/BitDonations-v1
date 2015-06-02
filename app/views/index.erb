@@ -3,20 +3,21 @@
     <div class="col-md-10 col-md-offset-1">
       <% if @entrepreneurs %>
         <% @entrepreneurs.each do |ent| %>
-          <div class='row'>
             <div class='col-md-5' id='project'>
-              <%=ent.project%>
-
-              <form action='/ent/:id' method='post'>
+              <p id='project-title'> <%=ent.project%> </p>
+              <br>
+              <img src="public/example-project.jpg">
+              <br>
+              <form action='/ent/:id' method='post' class='pull-left'>
                   <input type='hidden' name='ent_id' value='<%=ent.id%>'>
                   <button type='submit' class='btn btn-default' value='Find out more'>Find out more</button>
               </form>
-              <form action='/donate/:id' method='post'>
+              <form action='/donate/:id' method='post' class='pull-right'>
                   <input type='hidden' name='ent_id' value='<%=ent.id%>'>
                   <button type='submit' class='btn btn-default' id='donate' value='Donate'>Donate</button>
               </form>
             </div>
-         </div>
+            <!-- #by removing row are you going to stop it going onto a new line? -->
         <%end%>
       <%end%>
     </div>

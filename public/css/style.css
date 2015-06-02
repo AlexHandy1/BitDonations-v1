@@ -1,7 +1,19 @@
+body {
+  background-color: #CEECF6;
+}
 #top{
   margin-top: 30px;
 }
 
 #centre{
   margin-left: 450px;
+}
+
+#project{
+  border-style: double;
+  margin-left: 40px;
+}
+
+#project-title{
+  text-align: center;
 }
