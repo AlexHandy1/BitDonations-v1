@@ -6,7 +6,10 @@
             <div class='col-md-5' id='project'>
               <p id='project-title'> <%=ent.project%> </p>
               <br>
-              <img src="public/example-project.jpg">
+            <!--   <%= Dir.pwd %>
+              <img src="public/example-project.jpg"> not loading, get fixed -->
+              <div id='dummy'>
+              </div>
               <br>
               <form action='/ent/:id' method='post' class='pull-left'>
                   <input type='hidden' name='ent_id' value='<%=ent.id%>'>

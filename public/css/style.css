@@ -12,8 +12,20 @@ body {
 #project{
   border-style: double;
   margin-left: 40px;
+  margin-bottom: 30px;
 }
 
 #project-title{
   text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#dummy{
+  width: 300px;
+  height: 300px;
+  background-color: #F3F3DD;
+  margin: 0 auto;
 }
