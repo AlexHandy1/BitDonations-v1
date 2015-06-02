@@ -9,4 +9,12 @@ module SessionHelper
       click_button 'Sign up'
     end
   end
+
+  def sign_in(email='handy437@gmail.com', password='123')
+    within('#log-in') do
+      fill_in :email, with: email
+      fill_in :password, with: password
+      click_button 'Log in'
+    end
+  end
 end

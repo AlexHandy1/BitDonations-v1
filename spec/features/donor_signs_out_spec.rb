@@ -1,0 +1,18 @@
+require 'spec_helper'
+require_relative 'helpers/spec_helpers'
+
+
+include SessionHelper
+
+feature 'Donor signs out' do
+  before(:each) do
+    Donor.create(name: 'Alex',
+                 email: 'handy437@gmail.com',
+                 password: '123',
+                 password_confirmation: '123')
+  end
+
+  xscenario 'and can no longer access the donate button' do
+
+  end
+end

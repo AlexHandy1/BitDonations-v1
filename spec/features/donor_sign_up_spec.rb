@@ -5,7 +5,7 @@ require_relative 'helpers/spec_helpers'
 include SessionHelper
 
 feature 'Donor signs up' do
-  scenario 'through sign-up button and are added to the database' do
+  xscenario 'through sign-up button and are added to the database' do
     visit('/')
     click_link('Sign Up')
     expect(Donor.count).to eq 0
