@@ -91,6 +91,9 @@ GEM
       domain_name (~> 0.5)
     json (1.8.2)
     json_pure (1.8.2)
+    mailgun-ruby (1.0.3)
+      json (~> 1.8)
+      rest-client (~> 1.6)
     mime-types (2.5)
     mini_portile (0.6.2)
     multi_json (1.11.0)
@@ -174,9 +177,11 @@ DEPENDENCIES
   database_cleaner
   dm-postgres-adapter
   json
+  mailgun-ruby (~> 1.0.3)
   pg
   rack-flash3
   rake
+  rest-client (~> 1.8.0)
   rspec
   rubocop
   rubocop-rspec

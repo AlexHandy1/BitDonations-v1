@@ -1,6 +1,37 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/alexanderhandy/OneDrive/MA_Projects/bitcoin-lab/spec/features/donor_sign_up_spec.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        null,
+        null
+      ],
+      "/Users/alexanderhandy/OneDrive/MA_Projects/bitcoin-lab/spec/features/helpers/spec_helpers.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/alexanderhandy/OneDrive/MA_Projects/bitcoin-lab/spec/features/show_entrepreneurs_spec.rb": [
         1,
         null,
@@ -31,6 +62,6 @@
         null
       ]
     },
-    "timestamp": 1433174972
+    "timestamp": 1433243479
   }
 }

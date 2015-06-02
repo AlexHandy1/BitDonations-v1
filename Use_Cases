@@ -12,39 +12,35 @@
 
 3. As a donor,
    So that no one donates as me
-   I want to be able to log-out from the website
+   I want to be able to log-out from the website (can't donate unless signed-in >> redirect with a message)
 
 4. As a donor,
    So that I can complete a transaction
-   I want to link a Bitcoin address/account
+   I want to link my Bitcoin wallet and submit send requests to dynamically generated input addresses for Entrepreneurs
 
-5. As a donor,
-   So that I can complete a transaction
-   I want to transfer Bitcoin from one donor to an entrepreneur
-
-6. As an entrepreneur,
+5. As an entrepreneur,
    So that I can receive Bitcoins
-   I want to be able to log my Bitcoin details on the website
+   I want to be able to add my Bitcoin details on the website
 
-7. As a donor,
+6. As a donor,
    So that I know my transaction has been confirmed,
    I want to receive a text message from the website
 
-8. As an administrator,
+7. As an administrator,
    So that I can review transactions, their donors and corresponding entrepreneurs
    I want a database of entries for transactions on the site (with timestamps)
 
 Extra...
 
-9. As a donor and an entrepreneur,
+a. As a donor and an entrepreneur,
    So that I can assess activity on the site
    I want to be able to see a graphical representation of transactions on the site
 
-10. As an entrepreneur,
+b. As an entrepreneur,
    So that I can encourage donations,
    I want to have an account so that I can edit my own profile
 
-11. As a donor,
+c. As a donor,
    so that I can independently check my transaction
    I want to have a search bar to look up my Bitcoin transaction and address status
 
@@ -53,6 +49,7 @@ Specs (4 main UI pages)
   >> Grid structure 4*4 of clickable entrepreneur profiles
     >> store information and call-out from database
   >> Sign-up and Log-in buttons
+  >> soft blue background with white offset
   >> Have one example entrepreneur page
 >> Sign-up page
   >> What details need to include for Bitcoin?

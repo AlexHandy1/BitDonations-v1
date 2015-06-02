@@ -14,6 +14,8 @@ gem 'bundler'
 gem 'sinatra-partial'
 gem 'json'
 gem 'blockchain'
+gem 'mailgun-ruby', '~>1.0.3', require: 'mailgun'
+gem 'rest-client', '~> 1.8.0'
 
 group :test do
   gem 'rspec'

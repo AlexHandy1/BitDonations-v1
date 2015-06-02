@@ -13,10 +13,12 @@ require_relative 'models/transaction'
 require_relative 'database_setup'
 
 #REQUIRE CONTROLLERS/ HELPERS
-
+require_relative 'helpers/application'
+require_relative 'helpers/confirmation_email'
 require_relative 'controllers/application'
 require_relative 'controllers/ent'
 require_relative 'controllers/donate'
+require_relative 'controllers/donor'
 
 
 #SET-UP SINATRA
