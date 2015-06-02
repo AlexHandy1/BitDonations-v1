@@ -33,6 +33,8 @@ Bitcoin qu's/observations
 >> How will I create a second address?
 >> How will I test working? How do I get bitcoins quickly that can test with?
 >> How link backend method to a frontend button?
+>> is the blockchain wallet address stable?
+>> What is the best payment flow for Bitcoin given variance in some wallets e.g. Blockchain seems I can initiate a send via API using a stable address vs Coinbase/ standard where need to put in a recipient address
 
 Other questions
 >> What is best way to store images in database? (e.g. entrepreneurs) Separate class e.g. Image?
