@@ -24,5 +24,7 @@ require_relative 'controllers/donor'
 #SET-UP SINATRA
 enable :sessions
 set :session_secret, 'super_secret'
+set :server, 'webrick' #to deal with any Run HTTP errors thrown by not recognising a stated server
 set :public_folder, 'public'
 use Rack::Flash
+use Rack::MethodOverride
