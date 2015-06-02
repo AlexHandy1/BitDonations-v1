@@ -3,6 +3,7 @@ require 'sinatra'
 require 'data_mapper'
 require 'sinatra/partial'
 require 'rack-flash'
+require 'blockchain'
 
 #REQUIRE MODELS
 

@@ -1,6 +1,6 @@
 1. As a donor,
    So that I can decide who I want to give Bitcoin too
-   I want to be able to look at a 2*2 grid of example entrepreneurs with links to Find out More and Donate on home-page
+   I want to be able to look at a 2*2 grid of example entrepreneurs with links to Find out More and Donate on home-page (DONE)
 
 2a. As a donor,
     So that I can donate Bitcoin
@@ -36,12 +36,17 @@
 
 Extra...
 
-9. As an donor and an entrepreneur,
+9. As a donor and an entrepreneur,
    So that I can assess activity on the site
    I want to be able to see a graphical representation of transactions on the site
+
 10. As an entrepreneur,
    So that I can encourage donations,
-   I want to be able to edit my own profile
+   I want to have an account so that I can edit my own profile
+
+11. As a donor,
+   so that I can independently check my transaction
+   I want to have a search bar to look up my Bitcoin transaction and address status
 
 Specs (4 main UI pages)
 >> Landing page with main carousel

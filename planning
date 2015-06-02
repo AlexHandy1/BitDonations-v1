@@ -30,6 +30,16 @@ Bitcoin qu's/observations
 >> How inputs and outputs work is still not 100% clear and how relates to balances? (e.g. idea that everything is a transaction and can only spend outputs of received transactions)
 >> When do you need signatures?
 >> Where can you find the stable 'public key'? Doesn't it constantly change? (Khan video discrepancy?)
+>> How will I create a second address?
+>> How will I test working? How do I get bitcoins quickly that can test with?
+>> How link backend method to a frontend button?
+
+Other questions
+>> What is best way to store images in database? (e.g. entrepreneurs) Separate class e.g. Image?
+>> What about entrepreneurs who don't have donors and vice versa? (I just want it to populate when valid)
+>> Why isn't my responsive CSS getting picked up from bootstrap
+>> Best way to pass in Restful parameters to URL e.g. /ent/:id and get passed in id from each database entry?
+>> How exactly does a callback URL work? What used for?
 
 Chain.inc (seems like I don't need a specific wallet + ruby client)
   >> How do you link method specifically to testnet?
@@ -48,18 +58,23 @@ Stripe
   >> provides more tailored checkout access - could be a good wrapper particularly for conversions
 
 
-Plan
+Plan - Monday
 - Understand what data/ structures need to facilitate a Bitcoin transaction as a merchant (e.g. sign-up flow)
 - Understand what APIs/ best way to link into this
 - Build basic project structure for Sinatra
 - Set-up Models for database
 - Basic home-page grid (CSS course)
 
-Other questions
->> What is best way to store images in database? (e.g. entrepreneurs) Separate class e.g. Image?
->> What about entrepreneurs who don't have donors and vice versa? (I just want it to populate when valid)
->> Why isn't my responsive CSS getting picked up from bootstrap
->> Best way to pass in Restful parameters to URL e.g. /ent/:id and get passed in id from each database entry?
+Plan - Tuesday
+- Chase bitcoin API question - try and design some basic tests/ experiments
+- Complete donor sign-up user stories (inc. mailgun API link-up)
+
+
+Steps
+>> Add in gem and method
+>> Invoke method with necessary parameters
+>>
+
 
 
 

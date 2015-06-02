@@ -13,6 +13,7 @@ gem 'pg'
 gem 'bundler'
 gem 'sinatra-partial'
 gem 'json'
+gem 'blockchain'
 
 group :test do
   gem 'rspec'
