@@ -23,7 +23,7 @@
    I want to be able to be able to generate a Blockchain.info wallet on the website
 
 6. As a donor,
-   So that I know my transaction has been confirmed,
+   So that I know my transaction has been sent successfully,
    I want to receive a text message from the website (DONE)
 
 7. As an administrator,
@@ -47,6 +47,10 @@ c. As a donor,
 d. As a donor,
    So that I can donate at my convenience,
    I want to be able to integrate my existing wallet provider (e.g. more than just a Blockchain.info based solution)
+
+e. As a donor,
+   So I can be assured that the network has actually processed my donation
+   I want a more intelligent confirmation message that informs me when my transaction has been incorporated into the blockchain
 
 Specs (4 main UI pages)
 >> Landing page with main carousel
