@@ -16,7 +16,7 @@
 
 4. As a donor,
    So that I can complete a transaction
-   I want to link my a Blockchain.info wallet and submit send requests to input addresses for Entrepreneurs (DONE)
+   I want to link my Blockchain.info wallet and submit send requests to input addresses for Entrepreneurs (DONE)
 
 5. As an entrepreneur,
    So that I can receive Bitcoins
@@ -24,7 +24,7 @@
 
 6. As a donor,
    So that I know my transaction has been confirmed,
-   I want to receive a text message from the website
+   I want to receive a text message from the website (DONE)
 
 7. As an administrator,
    So that I can review transactions, their donors and corresponding entrepreneurs

@@ -1,9 +1,10 @@
 module SessionHelper
 
-  def sign_up(name="Alex", email='handy437@gmail.com', password='123', password_confirmation='123')
+  def sign_up(name="Alex", email='handy437@gmail.com', mobile='+447913251479'password='123', password_confirmation='123')
     within('#sign-up') do
       fill_in :name, with: name
       fill_in :email, with: email
+      fill_in :mobile, with: mobile
       fill_in :password, with: password
       fill_in :password_confirmation, with: password_confirmation
       click_button 'Sign up'

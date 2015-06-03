@@ -6,7 +6,6 @@ require 'rack-flash'
 require 'blockchain'
 
 #REQUIRE MODELS
-
 require_relative 'models/donor'
 require_relative 'models/entrepreneur'
 require_relative 'models/transaction'
@@ -15,6 +14,7 @@ require_relative 'database_setup'
 #REQUIRE CONTROLLERS/ HELPERS
 require_relative 'helpers/application'
 require_relative 'helpers/confirmation_email'
+require_relative 'helpers/transaction_confirmation'
 require_relative 'controllers/application'
 require_relative 'controllers/ent'
 require_relative 'controllers/donate'

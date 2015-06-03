@@ -16,6 +16,7 @@ class Donor
   property :id, Serial
   property :name, String
   property :email, String
+  property :mobile, String
   property :password_digest, Text
 
   def self.authenticate(email, password)
