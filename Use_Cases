@@ -20,7 +20,7 @@
 
 5. As an entrepreneur,
    So that I can receive Bitcoins
-   I want to be able to be able to generate a Blockchain.info wallet on the website
+   I want to have an automatically generated a Blockchain.info wallet on the website (DONE)
 
 6. As a donor,
    So that I know my transaction has been sent successfully,
@@ -32,25 +32,33 @@
 
 Extra...
 
-a. As a donor and an entrepreneur,
+8. As a donor and an entrepreneur,
    So that I can assess activity on the site
    I want to be able to see a graphical representation of transactions on the site
 
-b. As an entrepreneur,
+9. As an entrepreneur,
    So that I can encourage donations,
    I want to have an account so that I can edit my own profile
 
-c. As a donor,
+10. As an entrepreneur,
+    So that I can receive donations in one stable account,
+    I want to actively create a Blockchain.info wallet that I can access from website
+
+11. As a donor who doesn't already have an account,
+    So that I can donate to entrepreneurs
+    I want to actively create a Blockchain.info wallet that I can access from websitee
+
+12. As a donor,
    So that I can independently check my transaction
    I want to have a search bar to look up my Bitcoin transaction and address status
 
-d. As a donor,
+13. As a donor,
    So that I can donate at my convenience,
    I want to be able to integrate my existing wallet provider (e.g. more than just a Blockchain.info based solution)
 
-e. As a donor,
+14. As a donor,
    So I can be assured that the network has actually processed my donation
-   I want a more intelligent confirmation message that informs me when my transaction has been incorporated into the blockchain
+   I want a more robust confirmation message that informs me when my transaction has been incorporated into the blockchain
 
 Specs (4 main UI pages)
 >> Landing page with main carousel
