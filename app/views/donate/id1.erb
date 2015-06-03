@@ -1,3 +1,21 @@
-<h1> Make a donation</h1>
-<h2> Entrepreneur id: <%=@ent_id%> </h2>
-<p> Send bitcoin to <%=@input_address%> </p>
+<h1> Make a donation!</h1>
+
+<form id='new-donation'action='/donate/:id/new' method='post'>
+  <div class='form-group'>
+    <label for="Amount">Amount to donate (in Satoshi):</label>
+    <input type='text' name='satoshis' class="form-control" id="exampleInputEmail1">
+  </div>
+  <div class='form-group'>
+    <label for="Address">Your Blockchain Wallet Identifier (not stored)</label>
+    <input type='text' name='wallet-id' class="form-control" id="exampleInputEmail1">
+  </div>
+  <div class='form-group'>
+    <label for="Address">Your Blockchain Wallet Password (not stored)</label>
+    <input type='text' name='wallet-password' class="form-control" id="exampleInputEmail1">
+  </div>
+  <div class='form-group'>
+    <label for="Address">Your Chosen Blockchain Wallet Sending Address (not stored)</label>
+    <input type='text' name='wallet-address' class="form-control" id="exampleInputEmail1">
+  </div>
+   <button type='submit' class='btn btn-default' value='Log in'> Complete Donation </button>
+</form>

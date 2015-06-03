@@ -2,13 +2,21 @@ post '/donate/:id' do
   p session['donor_id']
   if session['donor_id']
     @ent_id = params['ent_id']
-    @resp = Blockchain::receive('12X6MREyoTDg6gGYf9BLZ26PaDCKA6xfmD', 'https://peaceful-sea-2336.herokuapp.com/')
-    @input_address = @resp.input_address
+    # @resp = Blockchain::receive('12X6MREyoTDg6gGYf9BLZ26PaDCKA6xfmD', 'https://peaceful-sea-2336.herokuapp.com/')
+    # @input_address = @resp.input_address
     erb :'donate/id1'
   else
     flash[:notice] = "Please log-in to donate"
     redirect to('/')
   end
+end
+
+post '/donate/:id/new' do
+  @donor_wallet = Blockchain::Wallet.new('348ca58b-70e0-474d-869c-484f903fde74', '93SYLrLVZjjw')
+  @donor_wallet.list_addresses()
+  @payment = @donor_wallet.send('1BUebyxQHjynEApQ3DTyVpweE4H81e6HKT', 40000, from_address: '12X6MREyoTDg6gGYf9BLZ26PaDCKA6xfmD')
+  # p @payment.tx_hash
+  erb :'donate/complete'
 end
 
 #Step 1 - get a manual, hardcoded 'send' request linked to my addresses working (hardcode amount etc) that is invoked when click Donate button
