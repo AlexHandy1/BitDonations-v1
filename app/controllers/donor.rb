@@ -12,6 +12,7 @@ post '/donor' do
     send_confirmation_email
     redirect to('/')
   else
+    flash[:notice] = 'Your account was not saved, please enter the correct details'
     redirect to('/donor/new')
   end
 end

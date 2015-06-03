@@ -14,13 +14,15 @@ end
 post '/donate/:id/new' do
   @satoshis, @wallet_id, @wallet_password, @wallet_address = params['satoshis'], params['wallet-id'], params['wallet-password'], params['wallet-address']
   @satoshis = @satoshis.to_i
-  p current_donor
-  p current_donor.mobile
-  send_transaction_text
-  #Step 2 works >> commented out for text testing
-  # @donor_wallet = Blockchain::Wallet.new(@wallet_id, @wallet_password)
-  # @payment = @donor_wallet.send('12X6MREyoTDg6gGYf9BLZ26PaDCKA6xfmD', @satoshis, from_address: @wallet_address)
-  # p @payment.tx_hash
+
+  #Step 2 Bitcoin transaction works >> commented out for Acceptance testing
+    @donor_wallet = Blockchain::Wallet.new(@wallet_id, @wallet_password)
+    @payment = @donor_wallet.send('1BUebyxQHjynEApQ3DTyVpweE4H81e6HKT', @satoshis, from_address: @wallet_address)
+    p @payment.tx_hash
+
+  #Text confirmation works with dynamically inputted mobile from database > commented out for Acceptance testing
+    send_transaction_text
+
   erb :'donate/complete'
 end
 
