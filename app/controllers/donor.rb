@@ -6,7 +6,7 @@ end
 post '/donor' do
   name, email, mobile, password, password_confirmation = params['name'], params['email'], params['mobile'],params['password'], params['password_confirmation']
   @donor = Donor.create(name: name, email: email, mobile: mobile, password: password, password_confirmation: password_confirmation)
-  @new_donor = Donor.first(@donor.name)
+  @new_donor = Donor.first(@donor.email)
 
   if @donor.save
     send_confirmation_email
