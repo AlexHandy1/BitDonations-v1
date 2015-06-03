@@ -12,10 +12,11 @@ post '/donate/:id' do
 end
 
 post '/donate/:id/new' do
-  @donor_wallet = Blockchain::Wallet.new('348ca58b-70e0-474d-869c-484f903fde74', '93SYLrLVZjjw')
-  @donor_wallet.list_addresses()
-  @payment = @donor_wallet.send('1BUebyxQHjynEApQ3DTyVpweE4H81e6HKT', 40000, from_address: '12X6MREyoTDg6gGYf9BLZ26PaDCKA6xfmD')
-  # p @payment.tx_hash
+  @satoshis, @wallet_id, @wallet_password, @wallet_address = params['satoshis'], params['wallet-id'], params['wallet-password'], params['wallet-address']
+  @satoshis = @satoshis.to_i
+  @donor_wallet = Blockchain::Wallet.new(@wallet_id, @wallet_password)
+  @payment = @donor_wallet.send('12X6MREyoTDg6gGYf9BLZ26PaDCKA6xfmD', @satoshis, from_address: @wallet_address)
+  p @payment.tx_hash
   erb :'donate/complete'
 end
 

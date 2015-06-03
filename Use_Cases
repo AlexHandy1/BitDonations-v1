@@ -16,11 +16,11 @@
 
 4. As a donor,
    So that I can complete a transaction
-   I want to link my Bitcoin wallet and submit send requests to dynamically generated input addresses for Entrepreneurs
+   I want to link my a Blockchain.info wallet and submit send requests to input addresses for Entrepreneurs (DONE)
 
 5. As an entrepreneur,
    So that I can receive Bitcoins
-   I want to be able to add my Bitcoin details on the website
+   I want to be able to be able to generate a Blockchain.info wallet on the website
 
 6. As a donor,
    So that I know my transaction has been confirmed,
@@ -41,8 +41,12 @@ b. As an entrepreneur,
    I want to have an account so that I can edit my own profile
 
 c. As a donor,
-   so that I can independently check my transaction
+   So that I can independently check my transaction
    I want to have a search bar to look up my Bitcoin transaction and address status
+
+d. As a donor,
+   So that I can donate at my convenience,
+   I want to be able to integrate my existing wallet provider (e.g. more than just a Blockchain.info based solution)
 
 Specs (4 main UI pages)
 >> Landing page with main carousel
