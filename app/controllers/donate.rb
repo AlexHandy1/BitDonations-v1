@@ -2,6 +2,7 @@ post '/donate/:id' do
   p session['donor_id']
   if session['donor_id']
     @ent_id = params['ent_id']
+    session['ent_id'] = @ent_id
     # @resp = Blockchain::receive('12X6MREyoTDg6gGYf9BLZ26PaDCKA6xfmD', 'https://peaceful-sea-2336.herokuapp.com/')
     # @input_address = @resp.input_address
     erb :'donate/id1'
@@ -12,21 +13,25 @@ post '/donate/:id' do
 end
 
 post '/donate/:id/new' do
+  @ent_id = session['ent_id']
+  p @ent_id
   @satoshis, @wallet_id, @wallet_password, @wallet_address = params['satoshis'], params['wallet-id'], params['wallet-password'], params['wallet-address']
   @satoshis = @satoshis.to_i
 
+  @transaction = Transaction.create(amount: @satoshis, entrepreneur_id: @ent_id, donor_id: current_donor.id)
+  p @transaction
   #Step 2 Bitcoin transaction works >> commented out for Acceptance testing
-    @donor_wallet = Blockchain::Wallet.new(@wallet_id, @wallet_password)
-    @payment = @donor_wallet.send('1BUebyxQHjynEApQ3DTyVpweE4H81e6HKT', @satoshis, from_address: @wallet_address)
+    # @donor_wallet = Blockchain::Wallet.new(@wallet_id, @wallet_password)
+    # @payment = @donor_wallet.send('1BUebyxQHjynEApQ3DTyVpweE4H81e6HKT', @satoshis, from_address: @wallet_address)
 
-    if @payment.tx_hash
-  #Text confirmation works with dynamically inputted mobile from database > commented out for Acceptance testing
-      send_transaction_text
+  #   if @payment.tx_hash
+  # #Text confirmation works with dynamically inputted mobile from database > commented out for Acceptance testing
+  #     send_transaction_text
       erb :'donate/complete'
-    else
-      flash[:notice] = 'Transaction failed, please try again'
-      redirect to('/')
-    end
+    # else
+    #   flash[:notice] = 'Transaction failed, please try again'
+    #   redirect to('/')
+    # end
 end
 
 #Step 1 - get a manual, hardcoded 'send' request linked to my addresses working (hardcode amount etc) that is invoked when click Donate button
