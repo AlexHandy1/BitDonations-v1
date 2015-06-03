@@ -18,12 +18,15 @@ post '/donate/:id/new' do
   #Step 2 Bitcoin transaction works >> commented out for Acceptance testing
     @donor_wallet = Blockchain::Wallet.new(@wallet_id, @wallet_password)
     @payment = @donor_wallet.send('1BUebyxQHjynEApQ3DTyVpweE4H81e6HKT', @satoshis, from_address: @wallet_address)
-    p @payment.tx_hash
 
+    if @payment.tx_hash
   #Text confirmation works with dynamically inputted mobile from database > commented out for Acceptance testing
-    send_transaction_text
-
-  erb :'donate/complete'
+      send_transaction_text
+      erb :'donate/complete'
+    else
+      flash[:notice] = 'Transaction failed, please try again'
+      redirect to('/')
+    end
 end
 
 #Step 1 - get a manual, hardcoded 'send' request linked to my addresses working (hardcode amount etc) that is invoked when click Donate button
