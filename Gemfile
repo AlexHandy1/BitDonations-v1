@@ -17,6 +17,7 @@ gem 'blockchain'
 gem 'mailgun-ruby', '~>1.0.3', require: 'mailgun'
 gem 'rest-client', '~> 1.8.0'
 gem 'twilio-ruby', '~> 4.1.0'
+gem 'sass'
 
 group :test do
   gem 'rspec'

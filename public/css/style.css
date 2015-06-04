@@ -13,6 +13,7 @@ body {
   border-style: double;
   margin-left: 40px;
   margin-bottom: 30px;
+  margin-top:10px;
 }
 
 #project-title{
@@ -24,7 +25,7 @@ body {
 }
 
 #dummy{
-  width: 300px;
+  width: 90%;
   height: 300px;
   background-color: #F3F3DD;
   margin: 0 auto;
@@ -34,4 +35,23 @@ body {
   margin-left: 40px;
   margin-bottom: 30px;
   padding-top: 60px;
+}
+
+.content {
+  background-attachment: fixed;
+  height: 500px;
+}
+
+#content1 {
+  background-image: url('https://download.unsplash.com/photo-1428908728789-d2de25dbd4e2')
+}
+#content2 {
+  background-image: url("https://download.unsplash.com/photo-1429305336325-b84ace7eba3b");
+}
+#content3 {
+  background-image: url("https://download.unsplash.com/photo-1428908728789-d2de25dbd4e2")
+}
+
+#boxfit{
+  margin-top: 5px;
 }

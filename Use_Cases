@@ -1,6 +1,6 @@
 1. As a donor,
    So that I can decide who I want to give Bitcoin too
-   I want to be able to look at a 2*2 grid of example entrepreneurs with links to Find out More and Donate on home-page (DONE - BASIC, STYLING - TBD)
+   I want to be able to look at a 2*2 grid of example entrepreneurs with links to Find out More and Donate on home-page (DONE)
 
 2a. As a donor,
     So that I can donate Bitcoin
@@ -46,7 +46,7 @@ Extra...
 
 10. As an entrepreneur,
     So that I can receive donations in one stable account,
-    I want to actively create a Blockchain.info wallet that I can access from website
+    I want to actively create a Blockchain.info wallet that I can access from website (DONE)
 
 11. As a donor who doesn't already have an account,
     So that I can donate to entrepreneurs

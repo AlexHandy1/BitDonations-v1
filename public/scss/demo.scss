@@ -1,0 +1,39 @@
+.window:nth-child(1){
+    .content{
+        position:absolute;
+        top:50%;
+        width:100%;
+        margin-top:-170px;
+        i{
+            font-size:4.0em;
+            width:100%;
+            text-align:center;
+            display:inline-block;
+            color:$light-green;
+        }
+        h1{
+            margin:0;
+        }
+        h2{
+            padding:0 30px;
+        }
+    }
+}
+
+
+.window:nth-child(2){
+    .content{
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-top:-180px;
+        margin-left: -160px;
+        h2{
+            color:$light-gray;
+            text-align:left;
+            .highlight{
+                color:white;
+            }
+        }
+    }
+}
