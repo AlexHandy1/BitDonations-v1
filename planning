@@ -100,6 +100,10 @@ Javascript/ jQuery features
   >> Try and chart some data from database or from Bitcoin API?
   >> (http://sidigital.co/) End goal >> some kind of moving animation to explain connecting entrepreneurs and donors
 
+Bugs
+>> Known bug is that if you try and donate when you sign-up without logging in then will crash donations
+>> Not storing the link or full wallet of entrepreneurs as created so I can never access the links without going into logs
+
 
 
 

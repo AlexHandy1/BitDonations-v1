@@ -19,6 +19,7 @@ post '/donate/:id/new' do
   #ACCESS PREVIOUSLY GENERATED ENTREPRENEUR BLOCKCHAIN WALLET FROM DATABASE
   @entrepreneur = Entrepreneur.get(@ent_id)
 
+
   #ACCESS DONOR WALLET FROM API AND SEND STATED BITCOIN TO ENTREPRENEUR
   @donor_wallet = Blockchain::Wallet.new(@donor_wallet_id, @donor_wallet_password)
   @payment = @donor_wallet.send(@entrepreneur.wallet_address, @satoshis, from_address: @donor_address)

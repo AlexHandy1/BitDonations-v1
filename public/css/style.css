@@ -31,10 +31,11 @@ body {
   margin: 0 auto;
 }
 
-#project-description{
+.project-description{
+  margin-top: 30px
   margin-left: 40px;
   margin-bottom: 30px;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 .content {
