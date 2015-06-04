@@ -3,11 +3,11 @@
       <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
         <% if @entrepreneurs %>
           <% @entrepreneurs.each do |ent| %>
-              <div class='col-md-5' id='project'>
-                <p id='project-title'> <%=ent.project%> </p>
+              <div class='col-md-5 transition project'>
+                <p class='project-title'> <%=ent.project%> </p>
               <!--   <%= Dir.pwd %>
                 <img src="public/example-project.jpg"> not loading, get fixed -->
-                <div id='dummy'>
+                <div class='dummy'>
                 </div>
                 <form action='/ent/:id' method='post' class='pull-left' id='boxfit'>
                     <input type='hidden' name='ent_id' value='<%=ent.id%>'>

@@ -9,14 +9,14 @@ body {
   margin-left: 450px;
 }
 
-#project{
+.project{
   border-style: double;
   margin-left: 40px;
   margin-bottom: 30px;
   margin-top:10px;
 }
 
-#project-title{
+.project-title{
   text-align: center;
   margin-top: 10px;
   font-weight: bold;
@@ -24,7 +24,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
 }
 
-#dummy{
+.dummy{
   width: 90%;
   height: 300px;
   background-color: #F3F3DD;
