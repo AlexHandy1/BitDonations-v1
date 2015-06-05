@@ -2,10 +2,15 @@ Summary
 =================
 
 * Facilitating transactions between the developed and the developing world remains arduous and incredibly expensive
+
 * Through working for a VC and helping set-up an entrepreneurship charity (The African Innovation Prize) in Rwanda I have personally experienced (and paid for) this market inefficiency
+
 * Crytocurrencies like Bitcoin offer a way to overcome these barriers and deliver very low cost, incredibly fast and secure transactions through an internet connection
+
 * A personal area of interest has been in exploring Bitcoin technology to facilitate direct P2P donations between donors and young entrepreneurs - think Kiva for micro-donations but with Bitcoin
+
 * As a first step towards building an MVP of this concept, I developed a simple web platform (see BitDonations) which utilises the Blockchain.info API to dynamically create Bitcoin wallets and facilitate donations between two parties.
+
 * The actual MVP would focus on developing a mobile-first application given levels of mobile penetration vs traditional desktop connections in E. Africa and improved usability
 
 [BitDonations - Basic Prototype](https://peaceful-sea-2336.herokuapp.com/)
@@ -91,10 +96,6 @@ Further Use Cases
 *  As an entrepreneur,
    So that I can manage my account
    I want to be able to log in and log out
-
-*  As an entrepreneur,
-   So that I can receive donations in one stable account,
-   I want to actively create a Blockchain.info wallet that I can access from website (DONE)
 
 *  As a donor who doesn't already have an account,
    So that I can donate to entrepreneurs
