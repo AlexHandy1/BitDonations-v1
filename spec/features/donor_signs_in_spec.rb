@@ -7,9 +7,10 @@ feature 'Donor signs in' do
   before(:each) do
     Donor.create(name: 'Alex',
                  email: 'handy437@gmail.com',
-                 mobile: '+447913251479'
+                 mobile: '+447913251479',
                  password: '123',
                  password_confirmation: '123')
+    Entrepreneur.create(name: "Alex", email: '123@gmail.com',project: 'Microinsurance for farmers', password: '123', password_confirmation: '123', wallet_address: '12345678910')
     end
 
   scenario 'as an existing user I can log-in and receive Welcome back message' do
@@ -20,29 +21,31 @@ feature 'Donor signs in' do
     expect(page).to have_content("Welcome back, Alex")
   end
 
-  xscenario 'as an existing, logged in user I can go to the donate page' do
+  scenario 'as an existing, logged in user I can go to the donate page' do
     visit('/')
     expect(page).not_to have_content("Welcome back, Alex")
     click_link('Log In')
     sign_in
-    click_button('#donate') #button issue
-    expect(page).to have_content("Make a donation")
+    within('.donatebutton') do
+      click_button('Donate')
+    end
+    expect(page).to have_content("Make a donation!")
   end
 
-  scenario 'without credentials I cannot log-in' do
+  scenario 'without credentials I cannot go to the donate page' do
+    visit('/')
+    within('.donatebutton') do
+      click_button('Donate')
+    end
+    expect(page).to have_content("Please log-in to donate")
+  end
+
+  scenario 'without correct credentials I cannot log-in' do
     visit('/')
     expect(page).not_to have_content("Welcome back, Alex")
     click_link('Log In')
     sign_in('handy437@gmail.com', 'wrong')
     expect(page).not_to have_content("Welcome back, Alex")
-  end
-
-  xscenario 'without credentials I cannot go to the donate page' do
-    visit('/')
-    expect(page).not_to have_content("Welcome back, Alex")
-    click_link('Log In')
-    click_button('#donate') #button issue
-    expect(page).not_to have_content("Make a donation")
   end
 end
 

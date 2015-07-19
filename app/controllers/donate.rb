@@ -1,5 +1,4 @@
 post '/donate/:id' do
-  p session['donor_id']
   if session['donor_id']
     @ent_id = params['ent_id']
     session['ent_id'] = @ent_id

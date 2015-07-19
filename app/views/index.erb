@@ -5,15 +5,13 @@
           <% @entrepreneurs.each do |ent| %>
               <div class='col-md-5 transition project'>
                 <p class='project-title'> <%=ent.project%> </p>
-              <!--   <%= Dir.pwd %>
-                <img src="public/example-project.jpg"> not loading, get fixed -->
                 <div class='dummy'>
                 </div>
                 <form action='/ent/:id' method='post' class='pull-left' id='boxfit'>
                     <input type='hidden' name='ent_id' value='<%=ent.id%>'>
                     <button type='submit' class='btn btn-default' value='Find out more'>Find out more</button>
                 </form>
-                <form action='/donate/:id' method='post' class='pull-right' id='boxfit'>
+                <form action='/donate/:id' method='post' class='pull-right donatebutton' id='boxfit'>
                     <input type='hidden' name='ent_id' value='<%=ent.id%>'>
                     <button type='submit' class='btn btn-default' id='donate' value='Donate'>Donate</button>
                 </form>

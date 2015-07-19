@@ -4,7 +4,6 @@
     <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- adding meta made better but not perfect -->
     <link href='/css/style.css' rel='stylesheet'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -16,7 +15,6 @@
   <div class='container'>
    <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -27,22 +25,20 @@
         <a class="navbar-brand" href="/">BitDonations</a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a id='sign-up-now'href="/signup/new">Sign Up</a></li>
           <li><a id='log-in-now' href="/sessions/new">Log In</a></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      </div>
+    </div>
   </nav>
 
     <div class='row'>
       <div class="col-md-11"> </div>
-      <!-- get working properly - learn offsets! -->
       <div class="col-md-offset-1">
         <%if session["donor_id"] %>
-          <form action='/sessions' method='post'>
+          <form action='/sessions' method='post' class="sign-out">
             <input type='hidden' name='_method' value='delete'>
             <button type='submit' class='btn btn-default' value='Sign out'> Sign out</button>
           </form>
@@ -50,7 +46,7 @@
       </div>
     </div>
 
-      <div class='row'> <!-- needs styling as an alert -->
+      <div class='row'>
         <div id='errors' class="col-md-6 col-md-offset-3">
           <%if flash[:errors] && !flash[:errors].empty? %>
             Sorry, you have the following errors to address:
@@ -63,8 +59,8 @@
         </div>
     </div>
 
-    <div class='row'> <!-- needs styling as an alert -->
-      <div class="col-md-6 col-md-offset-3"> <!-- centres -->
+    <div class='row'>
+      <div class="col-md-6 col-md-offset-3">
         <% if flash[:notice] %>
           <%=flash[:notice]%>
         <%end%>

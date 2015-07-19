@@ -9,7 +9,7 @@ post '/donor' do
   @new_donor = Donor.first(@donor.email)
 
   if @donor.save
-    send_confirmation_email
+    # send_confirmation_email
     redirect to('/')
   else
     flash[:notice] = 'Your account was not saved, please enter the correct details'

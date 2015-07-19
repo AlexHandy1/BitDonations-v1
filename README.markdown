@@ -13,6 +13,8 @@ Summary
 
 * The actual MVP would focus on developing a mobile-first application given levels of mobile penetration vs traditional desktop connections in E. Africa and improved usability
 
+* I decided to utilise the Blockchain.info API to provide the infrastructure for wallet creation and processing transactions due to ease of implementation and acceptance testing (e.g. one static Bitcoin address) - for a more detailed explanation please refer to my StackExchange post [Bitcoin Stack Exchange Post](http://bitcoin.stackexchange.com/questions/37716/setting-up-a-basic-test-transaction-for-p2p-donation-web-app-api-recommendatio)
+
 [BitDonations - Basic Prototype](https://peaceful-sea-2336.herokuapp.com/)
 
 Prototype Use Cases:
@@ -33,7 +35,7 @@ Prototype Use Cases:
 
 - [x] As a donor,
       So that no one donates as me
-      I want to be able to log-out from the website (can't donate unless signed-in >> redirect with a message)
+      I want to be able to log-out from the website
 
 - [x] As a donor,
       So that I can complete a transaction
@@ -53,7 +55,7 @@ Prototype Use Cases:
 
 - [x] As an entrepreneur,
       So that I can receive donations in one stable account,
-      I want to actively create a Blockchain.info wallet that I can access from website (DONE)
+      I want to actively create a Blockchain.info wallet that I can access from website
 
 ```
 
@@ -63,15 +65,15 @@ How to run
 * For web viewing, simply follow the link to the website hosted on heroku
 * For local use, clone or fork the repo to your local machine
 * Install sinatra and shotgun gems to view on your local host
-  * Disclaimer >> this is an unstable prototype but has access to REAL bitcoins and wallets. If you set-up wallets and make transactions that you cannot access afterwards I cannot be held responsible! If you want to try out drop me a message.
-* Tests can be run by installing rspec and capybara gems and running rspec from your command line (given this is a working prototype test coverage is not 100%)
+  * Disclaimer >> this is an work-in-progress prototype but has access to REAL bitcoins and wallets. If you set-up wallets and make transactions that you cannot access afterwards I cannot be held responsible! If you want to try out drop me a message.
+* Tests can be run by installing rspec and capybara gems and running rspec from your command line
 
 
 Technologies used
 ----
 
-* Production - Ruby, Javascript, jQuery, CSS (using Bootstrap), HTML,  Datamapper, PSQL, Sinatra, Heroku, Bcrypt (for passwords), Blockhain API
-* Testing - Rspec, Capybara, Database Cleaner (for test database), Rubocop, Coveralls, Jasmine
+* Production - Ruby, Javascript, jQuery, CSS (using Bootstrap), HTML,  Datamapper, PostgreSQL, Sinatra, Heroku, Bcrypt (for passwords), Blockhain API
+* Testing - Rspec, Capybara, Database Cleaner (for test database), Rubocop, Coveralls
 
 Screenshots
 ----
@@ -99,7 +101,7 @@ Further Use Cases
 
 *  As a donor who doesn't already have an account,
    So that I can donate to entrepreneurs
-   I want to actively create a Blockchain.info wallet that I can access from websitee
+   I want to actively create a Blockchain.info wallet that I can access from website
 
 *  As a donor,
    So that I can independently check my transaction
