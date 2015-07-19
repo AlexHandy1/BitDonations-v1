@@ -4,6 +4,7 @@
       "/Users/alexanderhandy/OneDrive/MA_Projects/bitcoin-lab/spec/features/donor_sign_up_spec.rb": [
         1,
         1,
+        1,
         null,
         null,
         1,
@@ -18,9 +19,16 @@
         1,
         null,
         null,
-        null,
+        1,
         1,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -28,13 +36,13 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         null,
         null,
         null,
@@ -168,6 +176,6 @@
         null
       ]
     },
-    "timestamp": 1437307959
+    "timestamp": 1437316859
   }
 }

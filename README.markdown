@@ -13,7 +13,7 @@ Summary
 
 * The actual MVP would focus on developing a mobile-first application given levels of mobile penetration vs traditional desktop connections in E. Africa and improved usability
 
-* I decided to utilise the Blockchain.info API to provide the infrastructure for wallet creation and processing transactions due to ease of implementation and acceptance testing (e.g. one static Bitcoin address) - for a more detailed explanation please refer to my StackExchange post [Bitcoin Stack Exchange Post](http://bitcoin.stackexchange.com/questions/37716/setting-up-a-basic-test-transaction-for-p2p-donation-web-app-api-recommendatio)
+* I decided to utilise the Blockchain.info API to provide the infrastructure for wallet creation and processing transactions due to ease of implementation and acceptance testing (e.g. one static Bitcoin address) - for a more detailed explanation please refer to my Stack Exchange post [Bitcoin Stack Exchange Post](http://bitcoin.stackexchange.com/questions/37716/setting-up-a-basic-test-transaction-for-p2p-donation-web-app-api-recommendatio)
 
 [BitDonations - Basic Prototype](https://peaceful-sea-2336.herokuapp.com/)
 
