@@ -20,6 +20,7 @@ gem 'twilio-ruby', '~> 4.1.0'
 gem 'sass'
 
 group :test do
+  gem 'byebug'
   gem 'rspec'
   gem 'cucumber'
   gem 'rubocop-rspec'
